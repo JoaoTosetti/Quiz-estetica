@@ -1,6 +1,7 @@
- @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
-    box-sizing: 0;
+    box-sizing: border-box;
 }
 
 html, body{
@@ -8,9 +9,9 @@ html, body{
 }
 
 .imagem-pergunta{
-width: 100vw;
-height: 157px;
-object-fit: cover;
+    width: 100vw;
+    height: 157px;
+    object-fit: cover;
 }
 
 .marcador{
@@ -31,12 +32,10 @@ object-fit: cover;
 }
 
 .alternativas{
-    /* centralizar o campo*/
     text-align: center;
 }
-
 .alternativas button{
-    width: 90% ;
+    width: 95%;
     margin-top: 21px;
     background: none;
     border: 1px solid #00AB93;
@@ -45,5 +44,61 @@ object-fit: cover;
     font-family: 'Bebas Neue';
     font-size: 16px;
     color: #0D6374;
-    box-shadow: 0px 2px 4px rgba(0,0,0,0.25);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.alternativas button:hover{
+    background: #00AB93;
+    border-color: #00AB93;
+    color: white;
+}
+
+.imagem-fundo{
+    text-align: center;
+    background-image: url(fundo.png);
+    background-size: cover;
+}
+
+.mascara{
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100vh;
+    padding: 10px;
+}
+
+.borda{
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.titulo{
+    margin: 0;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 29px;
+    color: #00AB93;
+}
+
+.subtitulo{
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.botao{
+    font-family: 'Bebas Neue';
+    text-decoration: none;
+    color: white;
+    background-color: #00AB93;
+    width: 257px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 20px;
+    border-radius: 10px;
 }
