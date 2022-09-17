@@ -1,7 +1,6 @@
 
 
 * {
-    margin: 0;
     box-sizing: border-box;
 }
 
@@ -22,12 +21,16 @@
     border-radius: 19px;
     background-color: #EA9D71;
     text-align: center;
-    box-shadow: 5px 5px 5px #C16B42;
+    font-size: 20px;
+    box-shadow: 5px 7px 5px #a55b39;
     height: 30px;
     width: 70%;
     position: relative;
-    margin-top: -7%;
     margin-left: 15%;
+}
+
+.titulo-index h1 {
+    margin-top: 10%;
 }
 
 .botao{
@@ -37,15 +40,16 @@
     background-color: #00AB93;
     width: 180px;
     display: block;
-    margin: 0 auto;
     font-size: 20px;
     text-align: center;
     border-radius: 10px;
+    margin-left: 25%;
+    margin-bottom: 10px;
 }
 
 .foto-index {
     width: 100%;
-    margin-top: -22%;
+    margin-top: -8%;
     text-align: center;
 }
 
